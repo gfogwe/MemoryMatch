@@ -24,7 +24,7 @@ export default function App() {
         // Call the function to load and play the music
         loadMusic();
 
-        // Remember to unload the sound from memory when it's no longer needed
+        // Remember to unload the sound from memory when it's no longer needed.
         return () => {
             if (music) {
                 music.unloadAsync();
